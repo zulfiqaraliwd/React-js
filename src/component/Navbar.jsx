@@ -2,9 +2,13 @@ import React from 'react'
 
 function Navbar() {
 const navbar = {
-color:'red',
-border : '2px solid black',
-
+justifyConten : "space-around",
+display : "flex",
+color : "blue",
+flexWrap : "wrap",
+alignItem: "center",
+border : "2px solid black",
+gap : "50px"
 }
     return (
     <div>
@@ -12,7 +16,7 @@ border : '2px solid black',
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
-      </ul>
+      </ul> 
     </div>
   )
 }
