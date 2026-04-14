@@ -14,8 +14,8 @@ root.render(
   <Navbar />
     <App />
     
-<Input name = "zulfiqar"  age = {77}/>
-<Input name = "ali"  age = {88}/>
+<Input name = "Zulfiqar"  age = {77}/>
+<Input name = "Ali"  age = {88}/>
 <Button />
 <Heading />
 <Heading22 />
