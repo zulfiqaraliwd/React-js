@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
 const navbar = {
-justifyConten : "space-around",
+justifyContent : "space-around",
 display : "flex",
 color : "blue",
 flexWrap : "wrap",

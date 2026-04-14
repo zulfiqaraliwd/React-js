@@ -11,13 +11,16 @@ import Navbar from './component/Navbar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
+  <Navbar />
     <App />
-<Input name = "zulfiqar" age = "22"/>
+    
+<Input name = "zulfiqar"  age = {77}/>
+<Input name = "ali"  age = {88}/>
 <Button />
-<Heading/>
+<Heading />
 <Heading22 />
 <Field />
-<Navbar />
+
 
   </>
 );
