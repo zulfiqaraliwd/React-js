@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import products from './utils/products';
 
 function App() {
   return (
@@ -23,6 +24,19 @@ function App() {
 
    <p>now below are the those which i created from react components</p>
    
+
+{
+  products.map((product)=>{
+return (
+<>
+<h1>Name :{product.name}</h1>
+<p>Brand :{product.brand}</p>
+<p>Price :{product.price}</p>
+</>
+)
+
+  })
+}
 
 
 
