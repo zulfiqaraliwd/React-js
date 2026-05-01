@@ -1,10 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
 import products from './utils/products';
+import { useState } from 'react';
+import Input from './component/Input';
+import Button from './component/Button';
+import Heading ,{Heading22,Field}from './component/Heading';
+import Navbar from './component/Navbar';
+import Navigation from './routing/Navigation';
 
 function App() {
+
+const [counter , setCounter] = useState(0);
+
   return (
    <>
+<Navbar/>
+<Navigation />
+     
+    <Input name = "Zulfiqar"  age = {77}/>
+<Input name = "Ali"  age = {88}/>
+<Button btn = "click"/>
+<Button btn = "contact"/>
+<Heading />
+<Heading22 />
+<Field />
    <h1>react first app</h1>
    <h2>react version 19</h2>
 
@@ -26,19 +44,22 @@ function App() {
    
 
 {
-  products.map((product)=>{
+  products.map(({name,brand,price})=>{
 return (
 <>
-<h1>Name :{product.name}</h1>
-<p>Brand :{product.brand}</p>
-<p>Price :{product.price}</p>
+<h1>Name :{name}</h1>
+<p>Brand :{brand}</p>
+<p>Price :{price}</p>
 </>
 )
 
   })
 }
 
+<h1> You type {counter} times</h1>
+<button onClick={()=>setCounter(counter+1)}>click</button>
 
+<hr />
 
    </>
      
