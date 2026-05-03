@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { newStudents } from '../utils/newStudent'
 
 function Services() {
   return (

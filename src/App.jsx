@@ -6,6 +6,8 @@ import Button from './component/Button';
 import Heading ,{Heading22,Field}from './component/Heading';
 import Navbar from './component/Navbar';
 import Navigation from './routing/Navigation';
+import { newStudents } from './utils/newStudent';
+
 
 function App() {
 
@@ -60,10 +62,27 @@ return (
 <button onClick={()=>setCounter(counter+1)}>click</button>
 
 <hr />
+<hr />
+
+<Button btn = "001"/>
+<Button btn = "022"/>
+<Button btn = "333"/>
+
+
+{
+  newStudents.map((e) => {
+    return(
+    <div>
+      <h1>Name is {e.name}</h1>
+      <h2>Class is {e.class}</h2>
+      <h2>Roll No is {e.rollNo}</h2>
+    </div>)
+})
+}
+
 
    </>
-     
-    
+       
   );
 }
 
